@@ -2499,6 +2499,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "0603WAF4700T5E"
+			(at 93.345 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23179"
+			(at 93.345 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "da761630-f50e-45a3-863f-3ac624a6638c")
 		)
@@ -2897,6 +2915,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "IN-S63AT5UW"
+			(at 82.55 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7207730"
+			(at 82.55 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9e309f7a-2421-4afc-aaea-9da2ada041e8")
 		)
@@ -2957,6 +2993,24 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 93.345 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "IN-S63AT5UW"
+			(at 93.345 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7207730"
 			(at 93.345 127.635 0)
 			(effects
 				(font
@@ -3026,6 +3080,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 144.145 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "WR06X103JTL"
+			(at 144.145 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C384294"
 			(at 144.145 60.96 0)
 			(effects
 				(font
@@ -3161,6 +3233,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 184.15 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM188R61A106ME69D"
+			(at 184.15 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C90053"
 			(at 184.15 56.515 0)
 			(effects
 				(font
@@ -3370,6 +3460,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "WR06X103JTL"
+			(at 170.815 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C384294"
+			(at 170.815 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "572ed42b-84c5-4681-a213-830cbf9d4800")
 		)
@@ -3506,6 +3614,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "0603WAF4700T5E"
+			(at 82.55 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23179"
+			(at 82.55 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dcc17069-19ee-4a0c-95a2-5ad07346bba9")
 		)
@@ -3567,6 +3693,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 151.13 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "WR06X103JTL"
+			(at 151.13 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C384294"
 			(at 151.13 60.96 0)
 			(effects
 				(font
@@ -3637,6 +3781,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 128.905 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "HAL1501SU-A"
+			(at 128.905 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2152449"
 			(at 128.905 118.11 0)
 			(effects
 				(font
@@ -3717,6 +3879,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CC0603KRX7R7BB104"
+			(at 125.73 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C108079"
+			(at 125.73 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6c78c552-70c9-4665-b64e-195ad779508e")
 		)
@@ -3778,6 +3958,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 158.115 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "WR06X103JTL"
+			(at 158.115 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C384294"
 			(at 158.115 60.96 0)
 			(effects
 				(font
@@ -3848,6 +4046,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
+			(at 209.55 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "20021321-00006C4LF"
+			(at 209.55 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2931358"
 			(at 209.55 75.565 0)
 			(effects
 				(font
@@ -3929,6 +4145,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 90.805 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R7BB104"
+			(at 90.805 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C108079"
 			(at 90.805 59.055 0)
 			(effects
 				(font
@@ -4131,6 +4365,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 98.425 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "OPT4060DTSR"
+			(at 98.425 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31267548"
 			(at 98.425 70.485 0)
 			(effects
 				(font
