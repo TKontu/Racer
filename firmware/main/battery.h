@@ -16,6 +16,16 @@
 #include "esp_err.h"
 
 /**
+ * @brief Battery sense divider ratio (battery voltage / ADC pin voltage)
+ *
+ * Racer v1.0 boards with the R30/R31 (100k/100k) divider on GPIO2: 2.0.
+ * Early v1.0 boards without the divider (battery wired straight to GPIO2): 1.0.
+ */
+#ifndef BATTERY_DIVIDER_RATIO
+#define BATTERY_DIVIDER_RATIO 2.0f
+#endif
+
+/**
  * @brief Initialize the battery monitoring system
  * 
  * This function initializes the ADC peripheral for battery voltage measurement.

@@ -6348,6 +6348,58 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 147.32) (xy 77.47 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "108fd3a2-6cfb-4ccc-9b2c-84bbce6be015")
+	)
+	(wire
+		(pts
+			(xy 77.47 160.02) (xy 77.47 172.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1309fbb-ef0c-424f-a749-a7052bcc7a86")
+	)
+	(wire
+		(pts
+			(xy 68.58 172.085) (xy 72.39 172.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f3ae1b-26c7-4628-a9b4-9014030454f4")
+	)
+	(wire
+		(pts
+			(xy 72.39 172.085) (xy 77.47 172.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b805ddb7-2a52-4bc6-9517-ad301adcf460")
+	)
+	(junction
+		(at 77.47 172.085)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d77913b5-5da5-4e06-bb06-ec342c2dd13a")
+	)
+	(junction
+		(at 72.39 172.085)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15dc2a36-bef7-4175-9093-5d4b9dcd3238")
+	)
+	(wire
+		(pts
 			(xy 116.84 202.565) (xy 116.84 233.68)
 		)
 		(stroke
@@ -8595,16 +8647,6 @@
 			(type default)
 		)
 		(uuid "b77caf5a-4262-4f8f-850d-aa025742e19d")
-	)
-	(wire
-		(pts
-			(xy 77.47 147.32) (xy 77.47 172.085)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b78a9ca2-0054-43c6-9d65-7224cafc1f29")
 	)
 	(wire
 		(pts
@@ -20074,6 +20116,402 @@
 			(project "racer"
 				(path "/11c7bd96-786c-4c10-b71b-7b198cc052d5"
 					(page "2")
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 77.47 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bbf2976f-ad11-4ea6-8d94-cc33c44b1ff6")
+		(property "Reference" "R30"
+			(at 80.01 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 80.01 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 75.692 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "WR06X1003FTL"
+			(at 77.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C132374"
+			(at 77.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87cc86e1-73d5-4a3b-a266-fb1b9816f125")
+		)
+		(pin "2"
+			(uuid "ab593904-59ee-4227-a8ff-6cae06270025")
+		)
+		(instances
+			(project "racer"
+				(path "/11c7bd96-786c-4c10-b71b-7b198cc052d5"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 68.58 175.895 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "85c89cba-bcab-4aa1-b45d-799c54eb61b7")
+		(property "Reference" "R31"
+			(at 71.12 174.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 71.12 177.1649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 66.802 175.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "WR06X1003FTL"
+			(at 68.58 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C132374"
+			(at 68.58 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d5ada2f-2083-421f-9710-e494945f29ca")
+		)
+		(pin "2"
+			(uuid "c22ba6db-4711-414a-8b36-674dce509845")
+		)
+		(instances
+			(project "racer"
+				(path "/11c7bd96-786c-4c10-b71b-7b198cc052d5"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 72.39 175.895 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "005a4754-4778-4be5-9d38-b381f3a85874")
+		(property "Reference" "C26"
+			(at 76.2 174.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 76.2 177.1649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 73.3552 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R7BB104"
+			(at 72.39 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C108079"
+			(at 72.39 175.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e21ed5a-41c7-43e0-9ab2-48509084f829")
+		)
+		(pin "2"
+			(uuid "e8172ac8-3555-4dd4-a668-1f3c26ea9b46")
+		)
+		(instances
+			(project "racer"
+				(path "/11c7bd96-786c-4c10-b71b-7b198cc052d5"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 179.705 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59947955-f391-4a1d-947f-2386069f4357")
+		(property "Reference" "#PWR070"
+			(at 68.58 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e91c0037-c3a0-42b2-a9bd-5b1948c91519")
+		)
+		(instances
+			(project "racer"
+				(path "/11c7bd96-786c-4c10-b71b-7b198cc052d5"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 72.39 179.705 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0bf544f8-6af6-4a94-8f6e-bc31110c2bfd")
+		(property "Reference" "#PWR071"
+			(at 72.39 186.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 179.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d7a9965-2429-462e-a82c-c9d05e34f8dc")
+		)
+		(instances
+			(project "racer"
+				(path "/11c7bd96-786c-4c10-b71b-7b198cc052d5"
+					(reference "#PWR071")
+					(unit 1)
 				)
 			)
 		)
