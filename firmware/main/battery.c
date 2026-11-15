@@ -19,7 +19,9 @@ static const char *TAG = "BATTERY";
 
 // ADC configuration for battery voltage measurement
 #define ADC_UNIT ADC_UNIT_1                    // Use ADC unit 1
-#define ADC_CHANNEL ADC_CHANNEL_1              // GPIO2 is ADC1_CHANNEL_0 on ESP32H2
+#define ADC_CHANNEL ADC_CHANNEL_1              // GPIO2 is ADC1_CHANNEL_1 on ESP32-H2
+#define ADC_SAMPLES 8                          // Samples averaged per reading
+#define ADC_FULL_SCALE_MV 3300                 // Approximate full scale at 12 dB (uncalibrated fallback)
 #define ADC_ATTEN ADC_ATTEN_DB_12              // 12dB attenuation for 0-3.3V range
 #define ADC_BITWIDTH ADC_BITWIDTH_DEFAULT      // Default bit width
 
@@ -72,24 +74,39 @@ esp_err_t battery_init(void) {
 /**
  * @brief Read battery voltage
  * 
- * This function reads the raw ADC value from the battery voltage measurement.
- * Currently returns raw ADC counts rather than calibrated voltage values.
- * 
- * @param voltage Pointer to store the voltage value (raw ADC counts)
+ * Averages ADC_SAMPLES readings, converts them to millivolts at the pin
+ * (calibrated when available) and scales by BATTERY_DIVIDER_RATIO to get
+ * the battery voltage.
+ *
+ * @param voltage Pointer to store the battery voltage (in volts)
  * @return ESP_OK on success, error code on failure
  */
 esp_err_t battery_read_voltage(float *voltage) {
-    int raw;
-    esp_err_t ret = adc_oneshot_read(adc1_handle, ADC_CHANNEL, &raw);
-    if (ret != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to read ADC value");
-        return ret;
+    int raw_sum = 0;
+    for (int i = 0; i < ADC_SAMPLES; i++) {
+        int raw;
+        esp_err_t ret = adc_oneshot_read(adc1_handle, ADC_CHANNEL, &raw);
+        if (ret != ESP_OK) {
+            ESP_LOGE(TAG, "Failed to read ADC value");
+            return ret;
+        }
+        raw_sum += raw;
+    }
+    int raw = raw_sum / ADC_SAMPLES;
+
+    int pin_mv;
+    if (do_calibration) {
+        esp_err_t ret = adc_cali_raw_to_voltage(adc1_cali_handle, raw, &pin_mv);
+        if (ret != ESP_OK) {
+            ESP_LOGE(TAG, "ADC calibration conversion failed");
+            return ret;
+        }
+    } else {
+        pin_mv = raw * ADC_FULL_SCALE_MV / 4095;
     }
 
-    // Return raw ADC counts (not calibrated voltage)
-    // TODO: Implement voltage calibration if needed
-    *voltage = (float)raw;
-    ESP_LOGD(TAG, "Raw ADC counts: %d", raw);
+    *voltage = (pin_mv / 1000.0f) * BATTERY_DIVIDER_RATIO;
+    ESP_LOGD(TAG, "Raw %d, pin %d mV, battery %.2f V", raw, pin_mv, *voltage);
 
     return ESP_OK;
 }
