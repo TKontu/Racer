@@ -14075,7 +14075,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "91"
+		(property "Value" "91K"
 			(at 281.305 64.7699 0)
 			(effects
 				(font
@@ -14111,7 +14111,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CR0603-FX-91R0ELF"
+		(property "MPN" "AR0603FR-0791KL"
 			(at 278.765 63.5 0)
 			(effects
 				(font
@@ -14120,7 +14120,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C203888"
+		(property "LCSC" "C855484"
 			(at 278.765 63.5 0)
 			(effects
 				(font
@@ -17793,7 +17793,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "806"
+		(property "Value" "806K"
 			(at 281.305 53.3399 0)
 			(effects
 				(font
@@ -17829,7 +17829,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RQ73C1J806RBTDF"
+		(property "MPN" "RC0603FR-07806KL"
 			(at 278.765 52.07 0)
 			(effects
 				(font
@@ -17838,7 +17838,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C185311"
 			(at 278.765 52.07 0)
 			(effects
 				(font
