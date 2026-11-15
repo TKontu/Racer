@@ -75,6 +75,8 @@ QueueHandle_t gpio_intr_evt_queue = NULL;  // Queue for GPIO interrupt events
 ring_buffer_t rbg_buffer;  // Ring buffer for RGB color data averaging
 
 // Battery monitoring variables
+#define BATTERY_LOW_V      3.30f              // Warn below this battery voltage
+#define BATTERY_RECOVER_V  3.45f              // Clear warning above this (hysteresis)
 static bool low_battery_warning = false;      // Low battery warning flag
 static uint32_t battery_check_counter = 0;    // Counter for battery check timing
 
@@ -238,17 +240,17 @@ void app_main(void)
             float voltage;
             esp_err_t ret = battery_read_voltage(&voltage);
             if (ret == ESP_OK) {
-                // ESP_LOGI("main", "Battery ADC counts: %d", (int)voltage);
-                
-                // Check for low battery condition (threshold: 3000 ADC counts)
-                if (voltage < 3000) {
+                // ESP_LOGI("main", "Battery: %.2f V", voltage);
+
+                // Low battery check with hysteresis (single-cell LiPo, volts)
+                if (voltage < BATTERY_LOW_V) {
                     if (!low_battery_warning) {
-                        ESP_LOGW("main", "LOW BATTERY WARNING: %d counts", (int)voltage);
+                        ESP_LOGW("main", "LOW BATTERY WARNING: %.2f V", voltage);
                         low_battery_warning = true;
                     }
-                } else {
+                } else if (voltage > BATTERY_RECOVER_V) {
                     if (low_battery_warning) {
-                        ESP_LOGI("main", "Battery voltage recovered: %d counts", (int)voltage);
+                        ESP_LOGI("main", "Battery voltage recovered: %.2f V", voltage);
                         low_battery_warning = false;
                     }
                 }
