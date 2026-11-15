@@ -770,7 +770,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "10uF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "6b1b21d3-e296-451f-bd1e-47fe9f9c1d7f")
